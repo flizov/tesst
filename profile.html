@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <style>
+         body {
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <script>
+        const userId = 12345; // Replace with actual user ID
+        const userName = "Иван"; // Replace with actual user name
+        const userBalance = 11; // Replace with actual user balance
+
+        const profileHTML = `
+            <p><strong>ID пользователя:</strong> ${userId}</p>
+            <p><strong>Имя:</strong> ${userName}</p>
+            <p><strong>Баланс:</strong> ${userBalance} Ξ</p>
+        `;
+
+        document.body.innerHTML = profileHTML;
+    </script>
+</div>
+
+</body>
+</html>
